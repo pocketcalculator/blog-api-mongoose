@@ -1,0 +1,31 @@
+{
+  "name": "blog-api-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pocketcalculator/blog-api-mongoose.git"
+  },
+  "author": "Paul Sczurek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pocketcalculator/blog-api-mongoose/issues"
+  },
+  "homepage": "https://github.com/pocketcalculator/blog-api-mongoose#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^5.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.2",
+    "morgan": "^1.9.0",
+    "uuid": "^3.2.1"
+  }
+}
