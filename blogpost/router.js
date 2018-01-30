@@ -11,7 +11,7 @@ const app = express();
 app.use(morgan('common'));
 app.use(bodyParser.json());
 
-app.get('/posts', (req, res) => {
+app.get('/', (req, res) => {
   BlogPost
     .find(filters)
     .then(BlogPosts => res.json(
@@ -23,7 +23,7 @@ app.get('/posts', (req, res) => {
     });
 });
 // can also request by ID
-app.get('/posts/:id', (req, res) => {
+app.get('/:id', (req, res) => {
   BlogPost
     // this is a convenience method Mongoose provides for searching
     // by the object _id property
