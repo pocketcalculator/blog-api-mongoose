@@ -10,3 +10,7 @@ const app = express();
 // load morgan for logging
 app.use(morgan('common'));
 app.use(bodyParser.json());
+
+router.get('/', (req, res) => {
+  res.json(Blogposts.get());
+});
